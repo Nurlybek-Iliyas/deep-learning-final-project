@@ -1,1 +1,58 @@
+# Week 1 Report
 
+## Work Completed
+This week, I selected the project topic: Fake News Detection.
+
+I chose the dataset "Fake and Real News Dataset" from Kaggle.
+
+I created a GitHub repository and organized the project structure, including folders for notebooks, reports, and data.
+
+I loaded the dataset using Python (pandas) and performed initial data exploration (EDA).
+
+---
+
+## Dataset Analysis
+The dataset contains approximately 45,000 news articles.
+
+Each sample includes:
+- title
+- text
+- subject
+- date
+- label (0 = fake, 1 = real)
+
+I analyzed:
+- class distribution
+- text length
+- missing values
+
+The dataset is slightly imbalanced, with more fake news than real news.
+
+---
+
+## Experiments
+No machine learning models were trained this week.
+
+The focus was on understanding the dataset and preparing it for further processing.
+
+---
+
+## Problems / Challenges
+- Some rows caused parsing errors when loading CSV files
+- There were missing values in the text column
+- News articles have very different lengths
+
+---
+
+## Solutions
+- Used the Python engine in pandas to handle CSV parsing issues
+- Skipped malformed rows using `on_bad_lines="skip"`
+- Removed missing text values using `dropna()`
+
+---
+
+## Plan for Next Week
+- Perform text preprocessing (cleaning, tokenization)
+- Convert text to numerical format using TF-IDF
+- Train a baseline model (Logistic Regression)
+- Evaluate model performance using accuracy and F1-score
