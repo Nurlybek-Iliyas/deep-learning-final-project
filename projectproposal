@@ -1,0 +1,211 @@
+# Final Project Proposal
+
+## Project Title
+
+**Fake News Detection using Deep Learning**
+
+---
+
+## Problem Statement
+
+The goal of this project is to build a model that can classify news articles as **fake** or **real**.
+
+This problem is important because misinformation spreads quickly online and can influence public opinion. Detecting fake news automatically can help platforms and users identify unreliable information.
+
+The model will take a news article (text) as input and predict whether it is:
+
+* Fake
+* Real
+
+---
+
+## Dataset
+
+**Name:** Fake and Real News Dataset
+**Source:** [https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+
+**Description:**
+
+* ~45,000 news articles
+* Two classes: fake and real
+
+**Features:**
+
+* `title` – headline of the article
+* `text` – main content
+* `subject` – topic
+* `date` – publication date
+
+**Target:**
+
+* `label` (0 = fake, 1 = real)
+
+**Format:** CSV files
+
+---
+
+## Planned Method
+
+### Baseline Model
+
+* Logistic Regression
+* TF-IDF vectorization
+
+### Deep Learning Model
+
+* LSTM (Long Short-Term Memory)
+
+### Optional Improvement
+
+* BERT (pretrained transformer model)
+
+### Training Setup
+
+* Loss Function: CrossEntropyLoss
+* Optimizer: Adam
+
+### Evaluation Metrics
+
+* Accuracy
+* F1-score
+
+### Data Split
+
+* Train: 70%
+* Validation: 15%
+* Test: 15%
+
+---
+
+## Expected Challenges
+
+* Long text sequences
+* Noisy or inconsistent data
+* Class imbalance
+* Overfitting
+* Computational limitations (training time)
+
+---
+
+## Detailed Weekly Plan
+
+### Week 1: Dataset and Setup
+
+**Tasks:**
+
+* Create GitHub repository with correct structure
+* Write README.md
+* Download dataset from Kaggle
+* Load dataset using pandas
+* Perform exploratory data analysis (EDA):
+
+  * Check number of samples
+  * Check class distribution
+  * Analyze text length
+  * Identify missing values
+* Clean dataset:
+
+  * Remove missing text values
+  * Remove duplicates
+
+**Expected Output:**
+
+* Proposal document
+* Initialized GitHub repository
+* EDA notebook
+* Basic visualizations
+* `reports/week-01.md`
+
+---
+
+### Week 2: Preprocessing and Baseline Model
+
+**Tasks:**
+
+* Text preprocessing:
+
+  * Lowercasing
+  * Removing punctuation
+  * Tokenization
+* Convert text to numerical features using TF-IDF
+* Split dataset into train/validation/test
+* Train Logistic Regression model
+* Evaluate model:
+
+  * Accuracy
+  * F1-score
+
+**Expected Output:**
+
+* Preprocessing pipeline
+* Baseline model results
+* Evaluation metrics
+* `reports/week-02.md`
+
+---
+
+### Week 3: Deep Learning Model (LSTM)
+
+**Tasks:**
+
+* Convert text to sequences (word indexing)
+* Apply padding to sequences
+* Build LSTM model:
+
+  * Embedding layer
+  * LSTM layer
+  * Fully connected layer
+* Implement training loop:
+
+  * Forward pass
+  * Loss computation
+  * Backpropagation
+* Train model for several epochs
+* Track metrics:
+
+  * Training loss
+  * Validation accuracy
+* Compare results with baseline
+
+**Expected Output:**
+
+* Trained LSTM model
+* Training logs
+* Loss/accuracy plots
+* Comparison with baseline
+* `reports/week-03.md`
+
+---
+
+### Week 4: Improvements and Finalization
+
+**Tasks:**
+
+* Improve model:
+
+  * Add dropout
+  * Tune hyperparameters (learning rate, batch size)
+  * Experiment with sequence length
+* Optional: experiment with BERT
+* Final evaluation on test set
+* Perform error analysis:
+
+  * Analyze incorrect predictions
+  * Identify model weaknesses
+* Prepare final report
+* Prepare presentation (5–7 minutes)
+
+**Expected Output:**
+
+* Final trained model
+* Final metrics (accuracy, F1-score)
+* Error analysis
+* `final-report.md`
+* Presentation slides
+* `reports/week-04.md`
+
+---
+
+## Conclusion
+
+This project will demonstrate the full machine learning pipeline, including data preprocessing, baseline modeling, deep learning implementation, and evaluation. The final model will provide insight into detecting fake news using natural language processing techniques.
