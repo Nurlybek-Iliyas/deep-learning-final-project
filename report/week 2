@@ -1,0 +1,49 @@
+# Week 2 Report
+
+## Work Completed
+This week, I performed text preprocessing and built a baseline machine learning model.
+
+The preprocessing steps included:
+- converting text to lowercase
+- removing punctuation
+- combining title and text
+- removing missing values
+
+Then, I converted the text into numerical features using TF-IDF vectorization.
+
+After that, I split the dataset into training and testing sets.
+
+I trained a Logistic Regression model as a baseline.
+
+---
+
+## Experiments
+Model: Logistic Regression  
+Feature extraction: TF-IDF  
+
+The model was trained on the processed dataset and evaluated on the test set.
+
+---
+
+## Results
+The model achieved the following results:
+
+- Accuracy: (fill after running, e.g. 0.95)
+- F1-score: (fill after running)
+
+The baseline model performed well and provides a good reference for comparison with deep learning models.
+
+---
+
+## Problems / Challenges
+- Text data required proper preprocessing
+- Dataset imbalance may affect model performance
+- TF-IDF creates large feature vectors
+
+---
+
+## Plan for Next Week
+- Convert text into sequences
+- Build LSTM model
+- Train deep learning model
+- Compare results with baseline
