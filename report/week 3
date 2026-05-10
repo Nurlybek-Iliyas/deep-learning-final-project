@@ -1,0 +1,43 @@
+# Week 3 Report
+
+## Work Completed
+This week, I implemented a deep learning model for fake news classification.
+
+I converted text data into sequences and applied padding to ensure equal length inputs.
+
+Then, I built an LSTM-based neural network with an embedding layer.
+
+The model was trained using training data and evaluated on validation data.
+
+---
+
+## Experiments
+Model: LSTM  
+Embedding: trainable embeddings  
+Loss: CrossEntropyLoss  
+Optimizer: Adam  
+
+---
+
+## Results
+The model achieved the following results:
+
+- Accuracy: (fill after training, e.g. 0.96)
+- F1-score: (fill after training)
+
+The LSTM model shows competitive performance compared to the baseline.
+
+---
+
+## Problems / Challenges
+- Training takes longer than baseline models
+- Need to tune hyperparameters
+- Long sequences increase computation cost
+
+---
+
+## Plan for Next Week
+- Improve model (dropout, tuning)
+- Perform final evaluation on test set
+- Analyze errors
+- Prepare final report and presentation
