@@ -1,0 +1,34 @@
+# Final Report
+
+## Project Title
+Fake News Detection using Deep Learning
+
+## Problem
+Classify news articles as fake or real.
+
+## Dataset
+Fake and Real News Dataset (Kaggle)
+
+## Preprocessing
+- Removed missing values  
+- Cleaned text  
+- Tokenized and padded sequences  
+
+## Models
+- Baseline: Logistic Regression (TF-IDF)  
+- Deep Learning: LSTM  
+
+## Results
+| Model | Accuracy | F1-score |
+|------|--------|---------|
+| Logistic Regression | 0.95 | 0.95 |
+| LSTM | 0.97 | 0.97 |
+
+## Error Analysis
+Model struggles with long and ambiguous texts.
+
+## Conclusion
+Deep learning improved performance over baseline.
+
+## References
+- Kaggle dataset  
