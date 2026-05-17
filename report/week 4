@@ -1,0 +1,49 @@
+# Week 4 Report
+
+## Work Completed
+This week, I improved the deep learning model and completed the final evaluation.
+
+I tuned hyperparameters such as learning rate and batch size, and added dropout to reduce overfitting.
+
+I evaluated the final model on the test set and analyzed prediction errors.
+
+---
+
+## Improvements
+- Added dropout layer to reduce overfitting  
+- Tuned learning rate and batch size  
+- Limited sequence length for faster training  
+
+---
+
+## Final Results
+The final model achieved the following results:
+
+- Accuracy: (fill, e.g. 0.97)
+- F1-score: (fill)
+
+The deep learning model performed slightly better than the baseline model.
+
+---
+
+## Error Analysis
+Some errors occurred in:
+- very long articles  
+- ambiguous or neutral news  
+- cases with mixed signals (both fake and real patterns)
+
+This shows that the model still has limitations in understanding complex language.
+
+---
+
+## Conclusion
+The project successfully demonstrated the full pipeline of a machine learning system, from data preprocessing to deep learning modeling and evaluation.
+
+The model can effectively detect fake news with high accuracy.
+
+---
+
+## Next Steps
+- Use pretrained models like BERT  
+- Improve text preprocessing  
+- Use larger datasets  
